@@ -38,11 +38,17 @@ data class AbbadiUpdate(
 class UpdateChecker(private val context: Context) {
 
     suspend fun checkUpdate(isManualCheck: Boolean = false) {
+        if (!isManualCheck) {
+            val now = System.currentTimeMillis()
+            if (now - lastAutoCheck < 30_000) return // debounce
+            lastAutoCheck = now
+        }
         val info = try { fetch() } catch (e: Exception) {
             e.printStackTrace()
             if (isManualCheck) toast(R.string.abbadi_update_failed)
             return // fail open
         }
+        android.util.Log.i("AbbadiUpdate", "installed=${BuildConfig.VERSION_CODE} latest=${info.latestCode} min=${info.minCode}")
         withContext(Dispatchers.Main) {
             when {
                 BuildConfig.VERSION_CODE < info.minCode -> {
@@ -71,6 +77,7 @@ class UpdateChecker(private val context: Context) {
     }
 
     companion object {
+        @Volatile private var lastAutoCheck = 0L
         const val UPDATE_JSON = "https://raw.githubusercontent.com/vpns6694-cyber/abbadi-tube-android/main/update.json"
 
         fun isArabic() = Locale.getDefault().language == "ar"

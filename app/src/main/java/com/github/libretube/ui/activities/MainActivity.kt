@@ -188,11 +188,7 @@ class MainActivity : AbstractPlayerHostActivity() {
         }
 
         // Check update automatically
-        if (true) { // ABBADI: always check remote update.json
-            lifecycleScope.launch(Dispatchers.IO) {
-                UpdateChecker(this@MainActivity).checkUpdate(false)
-            }
-        }
+        // ABBADI: update check runs in onResume (every open/resume, debounced 30s)
 
         // set the action bar for the activity
         setSupportActionBar(binding.toolbar)
@@ -362,6 +358,11 @@ class MainActivity : AbstractPlayerHostActivity() {
                 DatabaseHelper.addToSearchHistory(newItem)
             }
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        lifecycleScope.launch(Dispatchers.IO) { UpdateChecker(this@MainActivity).checkUpdate(false) }
     }
 
     override fun invalidateMenu() {

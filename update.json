@@ -1,14 +1,14 @@
 {
-  "latestVersionCode": 77,
-  "latestVersionName": "1.5.0",
-  "apkUrl": "https://github.com/vpns6694-cyber/abbadi-tube-android/releases/download/v1.5.0/ABBADI-Tube-1.5.0.apk",
+  "latestVersionCode": 78,
+  "latestVersionName": "1.5.1",
+  "apkUrl": "https://github.com/vpns6694-cyber/abbadi-tube-android/releases/download/v1.5.1/ABBADI-Tube-1.5.1.apk",
   "minSupportedVersionCode": 76,
   "iosVersion": "1.5.0",
   "iosBuild": 6,
   "iosUrl": "https://github.com/vpns6694-cyber/abbadi-tube-android/releases/tag/v1.5.0",
   "minSupportedIosBuild": 5,
-  "notesEn": "Glass top bar and floating glass bottom nav, animated red/burgundy selected icon, bigger glowing animated logo, dark colorized notifications, new home-screen widget.",
-  "notesAr": "شريط علوي زجاجي وشريط سفلي زجاجي عائم، أيقونة محددة متحركة بالأحمر والبورغندي، شعار أكبر متوهج ومتحرك، إشعارات داكنة، وودجت جديدة للشاشة الرئيسية.",
+  "notesEn": "Test update for the update service. The app now checks for updates every time it opens.",
+  "notesAr": "تحديث تجريبي لخدمة التحديثات",
   "forceMessageEn": "This version of ABBADI Tube has been stopped by the developer. Please update to continue.",
   "forceMessageAr": "تم إيقاف هذه النسخة من ABBADI Tube من قبل المطور. يرجى التحديث للمتابعة."
 }
