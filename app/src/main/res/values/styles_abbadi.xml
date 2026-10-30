@@ -67,4 +67,36 @@
     <style name="AbbadiSearchBar" parent="Widget.Material3.SearchBar">
         <item name="backgroundTint">@color/abbadi_glass</item>
     </style>
+
+    <style name="AbbadiProjCard">
+        <item name="android:layout_width">match_parent</item><item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item><item name="android:orientation">vertical</item>
+        <item name="android:padding">16dp</item><item name="android:background">@drawable/abbadi_glass_card_bg</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+    <style name="AbbadiProjTitle">
+        <item name="android:layout_width">match_parent</item><item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFFFF</item><item name="android:textSize">16sp</item><item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+    <style name="AbbadiProjDesc">
+        <item name="android:layout_width">match_parent</item><item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">4dp</item><item name="android:textColor">#B3FFFFFF</item>
+        <item name="android:textSize">13sp</item><item name="android:textAlignment">viewStart</item>
+    </style>
+    <style name="AbbadiChipLink">
+        <item name="android:layout_width">wrap_content</item><item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/abbadi_glass_card_bg</item><item name="android:paddingHorizontal">14dp</item>
+        <item name="android:paddingVertical">8dp</item><item name="android:textColor">#FFFF8FA3</item><item name="android:textSize">13sp</item>
+    </style>
+    <style name="AbbadiPopupOverlay" parent="ThemeOverlay.Material3.Dark">
+        <item name="popupMenuStyle">@style/AbbadiPopupMenu</item>
+        <item name="android:popupMenuStyle">@style/AbbadiPopupMenu</item>
+        <item name="actionOverflowMenuStyle">@style/AbbadiPopupMenu</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+    <style name="AbbadiPopupMenu" parent="Widget.Material3.PopupMenu.Overflow">
+        <item name="android:popupBackground">@drawable/abbadi_popup_bg</item>
+        <item name="android:popupElevation">8dp</item>
+    </style>
 </resources>

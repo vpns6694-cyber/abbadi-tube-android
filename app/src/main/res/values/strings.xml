@@ -590,4 +590,13 @@ based on LibreTube (GPL-3.0)</string>
     <string name="abbadi_check_updates">Check for updates</string>
     <string name="abbadi_widget_continue">Continue watching</string>
     <string name="abbadi_widget_empty">Open ABBADI Tube</string>
+    <string name="abbadi_dev_name">Abdalla Abbadi</string>
+    <string name="abbadi_dev_title">Software &amp; App Developer · Cybersecurity &amp; AI Automation Specialist</string>
+    <string name="abbadi_projects">Achievements / Projects</string>
+    <string name="abbadi_tube_d">This app, for Android &amp; iPhone</string>
+    <string name="abbadi_tv_d">IPTV app for Android TV, Samsung TV &amp; Apple TV</string>
+    <string name="abbadi_translator_d">Live translation for Galaxy Buds3</string>
+    <string name="glassabbadi_d">Glass widgets app</string>
+    <string name="emirates_mobility_d">Driving-school operations app</string>
+    <string name="abbadi_version">Version %1$s</string>
 </resources>

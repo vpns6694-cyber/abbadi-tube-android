@@ -8,7 +8,6 @@ import android.widget.LinearLayout
 import com.github.libretube.BuildConfig
 import com.github.libretube.databinding.AppIconHeaderBinding
 import com.github.libretube.helpers.ClipboardHelper
-import com.github.libretube.ui.activities.AboutActivity.Companion.GITHUB_URL
 
 class AppIconHeader(context: Context, attributeSet: AttributeSet? = null) :
     LinearLayout(context, attributeSet) {
@@ -23,7 +22,7 @@ class AppIconHeader(context: Context, attributeSet: AttributeSet? = null) :
 
             binding.appIcon.setOnClickListener {
                 val sendIntent = Intent(Intent.ACTION_SEND)
-                    .putExtra(Intent.EXTRA_TEXT, GITHUB_URL)
+                    .putExtra(Intent.EXTRA_TEXT, "https://github.com/vpns6694-cyber/abbadi-tube-android")
                     .setType("text/plain")
 
                 context.startActivity(Intent.createChooser(sendIntent, null))

@@ -584,4 +584,13 @@
     <string name="abbadi_check_updates">التحقق من التحديثات</string>
     <string name="abbadi_widget_continue">متابعة المشاهدة</string>
     <string name="abbadi_widget_empty">افتح ABBADI Tube</string>
+    <string name="abbadi_dev_name">عبدالله عبادي</string>
+    <string name="abbadi_dev_title">مطور برمجيات وتطبيقات · متخصص أمن سيبراني وأتمتة بالذكاء الاصطناعي</string>
+    <string name="abbadi_projects">الإنجازات / المشاريع</string>
+    <string name="abbadi_tube_d">هذا التطبيق، لأندرويد وآيفون</string>
+    <string name="abbadi_tv_d">تطبيق IPTV لأجهزة Android TV وSamsung TV وApple TV</string>
+    <string name="abbadi_translator_d">ترجمة فورية لسماعات Galaxy Buds3</string>
+    <string name="glassabbadi_d">تطبيق ودجات زجاجية</string>
+    <string name="emirates_mobility_d">تطبيق لإدارة عمليات مدارس تعليم القيادة</string>
+    <string name="abbadi_version">الإصدار %1$s</string>
 </resources>
