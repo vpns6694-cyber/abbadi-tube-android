@@ -14,13 +14,16 @@
         <item name="itemIconTint">@color/abbadi_nav_icon</item>
         <item name="itemTextColor">@color/abbadi_nav_icon</item>
         <item name="itemTextAppearanceActive">@style/AbbadiNavLabel</item>
-        <item name="itemPaddingTop">18dp</item>
+        <item name="itemPaddingTop">22dp</item>
         <item name="itemPaddingBottom">22dp</item>
+        <item name="itemBackground">@drawable/abbadi_nav_item_bg</item>
+        <item name="itemRippleColor">#33FFFFFF</item>
+        <item name="labelVisibilityMode">unlabeled</item>
         <item name="itemActiveIndicatorStyle">@style/AbbadiNavIndicator</item>
         <item name="elevation">0dp</item>
     </style>
     <style name="AbbadiNavIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
-        <item name="android:color">#FFD01C38</item>
+        <item name="android:color">@android:color/transparent</item>
         <item name="shapeAppearance">@style/AbbadiPill</item>
         <item name="android:width">72dp</item>
     </style>

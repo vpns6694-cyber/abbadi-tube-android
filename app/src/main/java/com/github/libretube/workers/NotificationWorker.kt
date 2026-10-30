@@ -219,6 +219,7 @@ class NotificationWorker(appContext: Context, parameters: WorkerParameters) :
     private fun createNotificationBuilder(group: String): NotificationCompat.Builder {
         return NotificationCompat.Builder(applicationContext, PUSH_CHANNEL_NAME)
             .setSmallIcon(R.drawable.ic_launcher_lockscreen)
+            .setColor(0xFFE0263F.toInt())
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
             .setAutoCancel(true)
             .setGroup(group)

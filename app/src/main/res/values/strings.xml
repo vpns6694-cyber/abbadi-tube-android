@@ -588,4 +588,6 @@ based on LibreTube (GPL-3.0)</string>
     <string name="abbadi_force_title">Update required</string>
     <string name="abbadi_force_default">This version of ABBADI Tube is no longer supported. Please update to continue.</string>
     <string name="abbadi_check_updates">Check for updates</string>
+    <string name="abbadi_widget_continue">Continue watching</string>
+    <string name="abbadi_widget_empty">Open ABBADI Tube</string>
 </resources>

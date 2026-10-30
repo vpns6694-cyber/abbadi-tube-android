@@ -56,7 +56,11 @@ class NowPlayingNotification(
     ): MediaNotification {
         createCurrentContentIntent()?.let { mediaSession.setSessionActivity(it) }
         nProvider.setSmallIcon(R.drawable.ic_launcher_lockscreen)
-        return nProvider.createNotification(mediaSession, customLayout, actionFactory, onNotificationChangedCallback)
+        return nProvider.createNotification(mediaSession, customLayout, actionFactory, onNotificationChangedCallback).also {
+            // ABBADI: dark colorized glass-style media notification
+            it.notification.color = 0xFF101012.toInt()
+            it.notification.extras.putBoolean(android.app.Notification.EXTRA_COLORIZED, true)
+        }
     }
 
     override fun handleCustomCommand(

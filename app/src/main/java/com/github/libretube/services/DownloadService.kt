@@ -531,6 +531,7 @@ class DownloadService : LifecycleService() {
         notificationManager = getSystemService()!!
 
         summaryNotificationBuilder = Builder(this, DOWNLOAD_CHANNEL_NAME)
+            .setColor(0xFF101012.toInt()).setColorized(true)
             .setSmallIcon(R.drawable.ic_launcher_lockscreen)
             .setContentTitle(getString(R.string.downloading))
             .setForegroundServiceBehavior(NotificationCompat.FOREGROUND_SERVICE_IMMEDIATE)
@@ -556,6 +557,7 @@ class DownloadService : LifecycleService() {
             .getActivity(this@DownloadService, 0, intent, FLAG_CANCEL_CURRENT, false)
 
         return Builder(this, DOWNLOAD_CHANNEL_NAME)
+            .setColor(0xFF101012.toInt()).setColorized(true)
             .setContentTitle("[${item.type}] ${item.fileName}")
             .setProgress(0, 0, true)
             .setOngoing(true)
@@ -570,7 +572,7 @@ class DownloadService : LifecycleService() {
         item: DownloadItem
     ) {
         notificationBuilder
-            .setSmallIcon(android.R.drawable.stat_sys_download)
+            .setSmallIcon(R.drawable.ic_download)
             .setWhen(System.currentTimeMillis())
             .setOngoing(true)
             .clearActions()

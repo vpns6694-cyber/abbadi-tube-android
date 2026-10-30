@@ -582,4 +582,6 @@
     <string name="abbadi_force_title">التحديث مطلوب</string>
     <string name="abbadi_force_default">هذه النسخة من ABBADI Tube لم تعد مدعومة. يرجى التحديث للمتابعة.</string>
     <string name="abbadi_check_updates">التحقق من التحديثات</string>
+    <string name="abbadi_widget_continue">متابعة المشاهدة</string>
+    <string name="abbadi_widget_empty">افتح ABBADI Tube</string>
 </resources>

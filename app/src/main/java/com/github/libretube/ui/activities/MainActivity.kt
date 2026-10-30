@@ -19,6 +19,7 @@ import androidx.core.content.pm.ShortcutManagerCompat
 import androidx.core.net.toUri
 import androidx.core.os.bundleOf
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.core.view.isVisible
 import androidx.core.view.allViews
 import androidx.core.view.children
 import androidx.core.view.doOnPreDraw
@@ -195,10 +196,17 @@ class MainActivity : AbstractPlayerHostActivity() {
 
         // set the action bar for the activity
         setSupportActionBar(binding.toolbar)
+        supportActionBar?.setDisplayShowTitleEnabled(false) // ABBADI: logo only, no text title
 
         val navHostFragment = binding.fragment.getFragment<NavHostFragment>()
         navController = navHostFragment.navController
         binding.bottomNav.setupWithNavController(navController)
+        // ABBADI: content scrolls beneath the glass bars
+        com.github.libretube.ui.abbadi.AbbadiGlassInsets.register(
+            navHostFragment.childFragmentManager,
+            { binding.appBarLayout.height.takeIf { it > 0 } ?: (64 * resources.displayMetrics.density).toInt() },
+            { if (binding.bottomNav.isVisible) binding.bottomNav.height else 0 }
+        )
 
         // save start tab fragment id and apply navbar style
         startFragmentId = try {
@@ -228,8 +236,13 @@ class MainActivity : AbstractPlayerHostActivity() {
             if (resources.configuration.smallestScreenWidthDp >= MINIMUM_SCREEN_SIZE_TABLET) {
                 fixBottomNavSelectionIndicatorWidth()
             }
+            com.github.libretube.ui.abbadi.AbbadiNavStyler.refresh(binding.bottomNav, it.itemId)
             navigateToBottomSelectedItem(it)
         }
+        navController.addOnDestinationChangedListener { _, _, _ ->
+            binding.bottomNav.post { com.github.libretube.ui.abbadi.AbbadiNavStyler.refresh(binding.bottomNav) }
+        }
+        binding.bottomNav.post { com.github.libretube.ui.abbadi.AbbadiNavStyler.refresh(binding.bottomNav) }
 
         if (binding.bottomNav.menu.children.none { it.itemId == startFragmentId }) deselectBottomBarItems()
 
