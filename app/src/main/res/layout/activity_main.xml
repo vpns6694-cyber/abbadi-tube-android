@@ -23,7 +23,13 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:menu="@menu/action_bar"
-            app:title="@string/app_name" />
+            app:title="">
+
+            <com.github.libretube.ui.abbadi.AbbadiLogoView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="start|center_vertical" />
+        </com.google.android.material.appbar.MaterialToolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
 

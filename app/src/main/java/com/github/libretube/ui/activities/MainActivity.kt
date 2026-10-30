@@ -233,7 +233,7 @@ class MainActivity : AbstractPlayerHostActivity() {
 
         if (binding.bottomNav.menu.children.none { it.itemId == startFragmentId }) deselectBottomBarItems()
 
-        binding.toolbar.title = ThemeHelper.getStyledAppName(this)
+        binding.toolbar.title = ""
 
         // handle error logs
         PreferenceHelper.getErrorLog().ifBlank { null }?.let {

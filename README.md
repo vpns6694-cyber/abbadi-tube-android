@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/abbadi/logo.png" width="600" alt="ABBADI Tube"/></p>
+
 # ABBADI Tube (Android)
 
 Privacy-friendly YouTube client with a **deep black glass** design — dark frosted surfaces, white text, subtle red accents. Optimized for Samsung Galaxy Z Fold6. Interface: English & Arabic.
