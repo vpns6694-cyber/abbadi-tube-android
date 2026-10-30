@@ -34,8 +34,8 @@ android {
         applicationId = "com.abbadi.tube"
         minSdk = 26
         targetSdk = 36
-        versionCode = 78
-        versionName = "1.5.1"
+        versionCode = 79
+        versionName = "1.5.2"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         resValue("string", "app_name", "ABBADI Tube")
     }
