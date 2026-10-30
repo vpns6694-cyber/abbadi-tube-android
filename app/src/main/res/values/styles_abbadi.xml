@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AbbadiGlassCard" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/abbadi_glass</item>
+        <item name="strokeColor">@color/abbadi_border</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardCornerRadius">24dp</item>
+        <item name="android:foreground">@drawable/abbadi_card_highlight</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+    <style name="AbbadiBottomNav" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@drawable/abbadi_glass_bar</item>
+        <item name="backgroundTint">@null</item>
+        <item name="itemIconTint">@color/abbadi_nav_icon</item>
+        <item name="itemTextColor">@color/abbadi_nav_icon</item>
+        <item name="itemTextAppearanceActive">@style/AbbadiNavLabel</item>
+        <item name="itemPaddingTop">18dp</item>
+        <item name="itemPaddingBottom">22dp</item>
+        <item name="itemActiveIndicatorStyle">@style/AbbadiNavIndicator</item>
+        <item name="elevation">0dp</item>
+    </style>
+    <style name="AbbadiNavIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">#FFD01C38</item>
+        <item name="shapeAppearance">@style/AbbadiPill</item>
+        <item name="android:width">72dp</item>
+    </style>
+    <style name="AbbadiToolbar" parent="Widget.Material3.Toolbar">
+        <item name="titleTextColor">@color/abbadi_text</item>
+        <item name="titleTextAppearance">@style/AbbadiToolbarTitle</item>
+    </style>
+    <style name="AbbadiToolbarTitle" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+    <style name="AbbadiChip" parent="Widget.Material3.Chip.Filter">
+        <item name="chipBackgroundColor">@color/abbadi_chip_bg</item>
+        <item name="chipStrokeColor">@color/abbadi_chip_stroke</item>
+        <item name="chipCornerRadius">999dp</item>
+        <item name="android:textColor">@color/abbadi_text</item>
+        <item name="chipStrokeWidth">1dp</item>
+    </style>
+    <style name="AbbadiBottomSheetDialog" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AbbadiBottomSheet</item>
+        <item name="android:windowBlurBehindEnabled" tools:targetApi="31">true</item>
+        <item name="android:windowBlurBehindRadius" tools:targetApi="31">24dp</item>
+    </style>
+    <style name="AbbadiBottomSheet" parent="Widget.Material3.BottomSheet.Modal">
+        <item name="backgroundTint">@color/abbadi_surface_high</item>
+        <item name="shapeAppearance">@style/AbbadiShapeTop</item>
+    </style>
+    <style name="AbbadiShapeTop" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">24dp</item>
+        <item name="cornerSizeTopRight">24dp</item>
+    </style>
+    <style name="AbbadiPill" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="AbbadiNavLabel" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/abbadi_font</item>
+    </style>
+    <style name="AbbadiSearchBar" parent="Widget.Material3.SearchBar">
+        <item name="backgroundTint">@color/abbadi_glass</item>
+    </style>
+</resources>

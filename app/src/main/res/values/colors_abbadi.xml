@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="abbadi_bg">#FF070708</color>
+    <color name="abbadi_surface">#FF101012</color>
+    <color name="abbadi_surface_high">#FF18181B</color>
+    <color name="abbadi_primary">#FF8E1B30</color>
+    <color name="abbadi_primary_bright">#FFE0263F</color>
+    <color name="abbadi_glass">#17FFFFFF</color>
+    <color name="abbadi_glass_strong">#E0141416</color>
+    <color name="abbadi_light">#FFFFFFFF</color>
+    <color name="abbadi_text">#FFFFFFFF</color>
+    <color name="abbadi_text_dim">#B3FFFFFF</color>
+    <color name="abbadi_border">#1FFFFFFF</color>
+</resources>
