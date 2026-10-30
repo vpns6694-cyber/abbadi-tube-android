@@ -5,6 +5,8 @@ import android.content.res.Resources
 import android.os.Build
 import android.os.Bundle
 import androidx.core.text.HtmlCompat
+import androidx.lifecycle.lifecycleScope
+import kotlinx.coroutines.launch
 import androidx.core.text.parseAsHtml
 import com.github.libretube.R
 import com.github.libretube.databinding.ActivityAboutBinding
@@ -29,6 +31,14 @@ class AboutActivity : BaseActivity() {
             onBackPressedDispatcher.onBackPressed()
         }
 
+        binding.abbadiCredit.setOnClickListener {
+            startActivity(android.content.Intent(android.content.Intent.ACTION_SENDTO, android.net.Uri.parse("mailto:connect@3bbadi.com")))
+        }
+        binding.abbadiUpdate.setOnClickListener {
+            lifecycleScope.launch(kotlinx.coroutines.Dispatchers.IO) {
+                com.github.libretube.util.UpdateChecker(this@AboutActivity).checkUpdate(true)
+            }
+        }
         setupCard(binding.donate, DONATE_URL)
         setupCard(binding.website, WEBSITE_URL)
         setupCard(binding.piped, PIPED_GITHUB_URL)

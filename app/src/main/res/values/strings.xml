@@ -578,4 +578,14 @@ based on LibreTube (GPL-3.0)</string>
     <string name="import_temp_playlist_summary">Do you want to create a new playlist named \'%1$s\'? The playlist will contain %2$d videos.</string>
     <string name="comment_verified">Verified</string>
     <string name="comment_pinned">Pinned</string>
+    <string name="abbadi_developer">Developer: Abdalla Abbadi · connect@3bbadi.com</string>
+    <string name="abbadi_update_title">Update available: %1$s</string>
+    <string name="abbadi_update_now">Update now</string>
+    <string name="abbadi_later">Later</string>
+    <string name="abbadi_downloading">Downloading update…</string>
+    <string name="abbadi_update_failed">Could not check or download the update</string>
+    <string name="abbadi_allow_install">Allow ABBADI Tube to install updates, then tap Update again</string>
+    <string name="abbadi_force_title">Update required</string>
+    <string name="abbadi_force_default">This version of ABBADI Tube is no longer supported. Please update to continue.</string>
+    <string name="abbadi_check_updates">Check for updates</string>
 </resources>

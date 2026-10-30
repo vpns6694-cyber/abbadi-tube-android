@@ -1,0 +1,14 @@
+{
+  "latestVersionCode": 76,
+  "latestVersionName": "1.4.0",
+  "apkUrl": "https://github.com/vpns6694-cyber/abbadi-tube-android/releases/download/v1.4.0/ABBADI-Tube-1.4.0.apk",
+  "minSupportedVersionCode": 76,
+  "iosVersion": "1.4.0",
+  "iosBuild": 5,
+  "iosUrl": "https://github.com/vpns6694-cyber/abbadi-tube-android/releases/tag/v1.4.0",
+  "minSupportedIosBuild": 5,
+  "notesEn": "• In-app updates from the developer\n• Developer credits on About, Settings and splash\n• Fixes and improvements",
+  "notesAr": "• تحديث تلقائي من داخل التطبيق\n• حقوق المطور في حول والإعدادات وشاشة البداية\n• تحسينات وإصلاحات",
+  "forceMessageEn": "This version of ABBADI Tube has been stopped by the developer. Please update to continue.",
+  "forceMessageAr": "تم إيقاف هذه النسخة من ABBADI Tube من قبل المطور. يرجى التحديث للمتابعة."
+}

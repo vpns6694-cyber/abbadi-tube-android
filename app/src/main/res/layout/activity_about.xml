@@ -27,8 +27,19 @@
 
             <androidx.appcompat.widget.AppCompatTextView
                 style="@style/AboutItem"
-                android:text="@string/abbadi_credit"
+                android:text="@string/abbadi_developer"
                 app:drawableStartCompat="@drawable/ic_license" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/abbadiUpdate"
+            style="@style/AboutCard">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/AboutItem"
+                android:text="@string/abbadi_check_updates"
+                app:drawableStartCompat="@drawable/ic_update" />
 
         </com.google.android.material.card.MaterialCardView>
 

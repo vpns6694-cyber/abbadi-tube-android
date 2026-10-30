@@ -187,7 +187,7 @@ class MainActivity : AbstractPlayerHostActivity() {
         }
 
         // Check update automatically
-        if (PreferenceHelper.getBoolean(PreferenceKeys.AUTOMATIC_UPDATE_CHECKS, false)) {
+        if (true) { // ABBADI: always check remote update.json
             lifecycleScope.launch(Dispatchers.IO) {
                 UpdateChecker(this@MainActivity).checkUpdate(false)
             }

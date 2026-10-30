@@ -65,4 +65,9 @@
 
     </PreferenceCategory>
 
+    <Preference
+        app:key="abbadi_developer"
+        app:title="@string/abbadi_developer"
+        app:summary="GPL-3.0 · based on LibreTube" />
+
 </PreferenceScreen>

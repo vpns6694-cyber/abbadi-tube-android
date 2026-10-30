@@ -30,6 +30,11 @@ class MainSettings : BasePreferenceFragment() {
             true
         }
 
+        findPreference<Preference>("abbadi_developer")?.setOnPreferenceClickListener {
+            startActivity(android.content.Intent(android.content.Intent.ACTION_SENDTO, android.net.Uri.parse("mailto:connect@3bbadi.com")))
+            true
+        }
+
         val crashlog = findPreference<Preference>("crashlog")
         crashlog?.isVisible = PreferenceHelper.getErrorLog().isNotEmpty() && BuildConfig.DEBUG
         crashlog?.setOnPreferenceClickListener {
